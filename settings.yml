@@ -1,0 +1,37 @@
+#User defined
+user:
+  customize_pgadmin_default_email:
+    label:
+      pgAdmin email
+    type:
+      input
+    values:
+      test@get-deck.com
+    hint:
+      This will be your login email for pgAdmin
+    target:
+      PGADMIN_DEFAULT_EMAIL
+  customize_pgadmin_default_password:
+    label:
+      pgAdmin password
+    type:
+      input
+    values:
+      password
+    hint:
+      Password for pgAdmin
+    target:
+      PGADMIN_DEFAULT_PASSWORD
+#System defaults
+system:
+  #For collecting and storing DB in .env
+  #db/user/password
+  db_credentials:
+    true
+  #Generate public ports for the docker image
+  ports:
+    http:
+      PGADMIN_PORT
+    others:
+      - POSTGRES_PORT
+
