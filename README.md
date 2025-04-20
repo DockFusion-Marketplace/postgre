@@ -1,37 +1,11 @@
-# Postgresql & PgAdmin powered by compose
+# PostgreSQL in Docker
+This template provides a full-featured PostgreSQL database service along with pgAdmin 4, a powerful web-based administration tool for managing your databases. It’s ready to use with Dock Fusion, making local development and database management quick and easy.
 
+## 🚀 What's Included
 
-## Requirements:
-* docker >= 17.12.0+
-* docker-compose
+- PostgreSQL (13+) — Robust and production-ready relational database
+- pgAdmin 4 (6.21+) — Web-based PostgreSQL admin interface
 
-## Quick Start
-* Clone or download this repository
-* Go inside of directory,  `cd postgres`
-* Run this command `docker-compose up -d`
-
-
-## Environments
-This Compose file contains the following environment variables:
-
-* `POSTGRES_USER` the default value is **postgres**
-* `POSTGRES_PASSWORD` the default value is **Abcd@1234**
-* `PGADMIN_PORT` the default value is **5050**
-* `PGADMIN_DEFAULT_EMAIL` the default value is **hello@get-deck.com**
-* `PGADMIN_DEFAULT_PASSWORD` the default value is **password**
-
-## Access to postgres: 
-* `localhost:5432`
-* **Username:** postgres (as a default)
-* **Password:** Abcd@1234 (as a default)
-
-## Access to PgAdmin: 
-* **URL:** `http://localhost:5050`
-* **Username:** hello@get-deck.com (as a default)
-* **Password:** password (as a default)
-
-## Add a new server in PgAdmin:
-* **Host name/address** `postgres`
-* **Port** `5432`
-* **Username** as `DB_USER`, by default: `postgres`
-* **Password** as `DB_PASSWORD`, by default `Abcd@1234`
+## 📦 Requirements
+- [Docker](https://www.docker.com)
+- [Dock Fusion](https://github.com/DockFusion/dock-fusion-app/releases)

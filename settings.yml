@@ -1,31 +1,40 @@
 #User defined
 user:
-  customize_pgadmin_default_email:
+  postgres_version:
     label:
-      pgAdmin email
-    type:
-      input
-    values:
-      test@get-deck.com
+      PostgreSQL version
     hint:
-      This will be your login email for pgAdmin
+      Select PostgreSQL version
+    type:
+      select
+    values:
+      - "17"
+      - "16"
+      - "15"
+      - "14"
+      - "13"
     target:
-      PGADMIN_DEFAULT_EMAIL
-  customize_pgadmin_default_password:
+      POSTGRES_VERSION
+
+  pgadmin_version:
     label:
-      pgAdmin password
-    type:
-      input
-    values:
-      password
+      pgAdmin version
     hint:
-      Password for pgAdmin
+      Select pgAdmin version
+    type:
+      select
+    values:
+      - "9.2"
+      - "9.1"
+      - "9.0"
+      - "8.14"
+      - "7.8"
+      - "6.21"
     target:
-      PGADMIN_DEFAULT_PASSWORD
+      PG_ADMIN_VERSION
+
 #System defaults
 system:
-  #For collecting and storing DB in .env
-  #db/user/password
   db_credentials:
     true
   #Generate public ports for the docker image
